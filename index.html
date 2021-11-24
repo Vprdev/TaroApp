@@ -14,32 +14,51 @@
 </head>
 
 <body>
-    <div class="taro-navbar w-full fixed h-screen navbar top-0 z-50">
-        <div class="taro-logo">
-            <img src="/images/taro-logo.png" alt="">
-        </div>
-        <div class="taro-nav-right">
-            <ul>
-                <li>Trang Chủ</li>
-                <li>Taro là gì?</li>
-                <li>Góp ý</li>
-                <li><a href="">Taro</a><small>wiki</small></li>
-                <li>
-                    <a href="">
-                        <img src="/images/taro-CHPlay.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="/images/taro-AppStore.png" alt="">
-                    </a>
-                </li>
-            </ul>
+    <div class="taro-navbar w-full fixed h-screen navbar top-0 z-10 inset-x-0">
+        <div class="container taro-menu mx-auto flex flex-row justify-between content-center py-8">
+            <div class="taro-logo w-1/3">
+                <img src="/images/taro-logo.png" alt="Taro logo" class="w-36 ml-4 md:ml-0" />
+            </div>
+            <div class="taro-nav-right w-2/3">
+                <ul class="flex justify-end text-white flex-row items-center">
+                    <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8">Trang chủ</li>
+                    <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8">Taro là gì?</li>
+                    <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8">Góp ý</li>
+                    <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8">
+                        <a href="" class="cursor-pointer rounded py-2 px-6 bg-gradient-to-r from-pink-400 via-pink-500 to-red-500">Taro <small class="text-sm">wiki</small></a>
+
+                    </li>
+                    <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8">
+                        <a href="">
+                            <img src="/images/taro-CHPlay.png" alt="CHPlay" class="w-28 cursor-pointer">
+                        </a>
+                    </li>
+                    <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8">
+                        <a href="">
+                            <img src="/images/taro-AppStore.png" alt="AppStore" class="w-28 cursor-pointer">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <section class="taro-banner">
-        <div class="taro-background relative bg-contain h-screen"></div>
-
+        <div class="taro-background relative bg-contain h-screen overflow-hidden"></div>
+        <div class="taro-banner-content absolute top-1/4 md:w-2/3 justify-center mx-auto inset-x-0 text-white z-50">
+            <div class="banner-title flex justify-center content-center text-base items-center md:text-4xl whitespace-nowrap">
+                TÌM THẤY
+                <h1 class="md:text-6xl md:mx-8 text-2xl"> ÁNH SÁNG </h1> TÂM HỒN
+            </div>
+            <div class="banner-content mx-auto text-center justify-center w-full content-center items-center flex-row md:text-2xl mt-8">
+                <p>Nếu như mỗi chúng ta đều là những thực thể tâm linh được tạo ra từ ánh sáng tràn đầy yêu thương của Nguồn, của Vũ Trụ, vậy ánh sáng của bạn sẽ là màu gì nhỉ? Trên hành trình thắp lên ánh sáng của bản thân, soi sáng đường bạn đi, hãy để
+                    những ánh quang khác cùng cộng hưởng với bạn. Hãy để TARO có thể đi cùng bạn. Và cùng nhau, chúng ta tìm về với chân ngã của chúng mình.
+                </p>
+            </div>
+            <div class="banner-logo_download flex justify-center mt-8">
+                <img class="w-40" src="/images/taro-CHPlay.png" alt="CHPlay">
+                <img class="w-40 ml-4" src="/images/taro-AppStore.png" alt="AppStore">
+            </div>
+        </div>
     </section>
     <section >
         <div class="xl:container flex justify-center xl:mx-auto md:container md:mx-auto mt-16">
@@ -141,7 +160,64 @@
           </div>
     </section>
     <section class=""></section>
-    <section class=""></section>
+    <section class="mt-24">
+        <div class="container mx-auto flex justify-between flex-col">
+            <div class="text-center">
+              <button class="text-2xl lg:text-5xl rounded-full font-family-linotte-bold shadow-2xl  pt-6 p-4 px-16 mb-4 md:mb-16 lg:mb-36 aos-init aos-animate">
+                  TÍNH NĂNG CỦA TARO
+              </button>
+            </div>
+            <ul class="flex flex-col md:flex-row md:flex-wrap mx-auto text-center w-5/6 aos-init aos-animate" data-aos="zoom-in-up" data-aos-duration="500">
+                <li class="w-5/6 px-0 mx-auto mt-16 md:mt-0 md:px-0 md:w-1/2 lg:w-1/4 flex flex-col">
+                  <div class="w-1/3 mx-auto">
+                    <img class="w-5/6 mx-auto" src="images/taro-three.png" alt="">
+                  </div>
+                  <div class="text-2xl mt-4 mb-7 taro--text--type__linotte-bold">
+                    THÔNG ĐIỆP HÀNG NGÀY
+                  </div>
+                  <div class="text-base taro--text--type__linotte-light md:text-xl">
+                    Gửi thông điệp, câu chuyện và đưa ra các giải pháp về cuộc sống hàng ngày các vấn đề cụ thể của bạn.
+                  </div>
+                </li>
+                <li class="w-5/6 px-0 mx-auto mt-16 md:mt-0 md:px-0 md:w-1/2 lg:w-1/4 flex flex-col aos-init aos-animate">
+                  <div class="w-1/3 mx-auto">
+                    <img class="w-5/6 mx-auto" src="images/taro-app-library.png" alt="">
+                  </div>
+                  <div class="text-2xl my-8 taro--text--type__linotte-bold">
+                    THƯ VIỆN TAROT
+                  </div>
+                  <div class="text-base taro--text--type__linotte-light md:text-xl">
+                    Kho thư viện gồm hơn 15 nghìn lá bài Tarot &amp; Oracle, một nguồn tài nguyên của trí tuệ đa văn hóa
+                  </div>
+                </li>
+                <li class="w-5/6 px-0 mx-auto mt-16 md:mt-0 md:px-0 md:w-1/2 lg:w-1/4 flex flex-col aos-init aos-animate">
+                  <div class="w-1/3 mx-auto">
+                    <img class="w-5/6 mx-auto" src="images/taro-app-journal.png" alt="">
+                  </div>
+                  <div class="text-2xl my-8 taro--text--type__linotte-bold">
+                    NHẬT KÝ HÀNG NGÀY
+                  </div>
+                  <div class="text-base taro--text--type__linotte-light md:text-xl">
+                    Kể chuyện, nhật ký hàng ngày, theo dõi cảm xúc, chia sẻ với cộng đồng
+                  </div>
+                </li>
+                <li class="w-5/6 px-0 mx-auto mt-16 md:mt-0 md:px-0 md:w-1/2 lg:w-1/4 flex flex-col aos-init aos-animate" >
+                  <div class="w-1/3 mx-auto">
+                    <img class="w-5/6 mx-auto" src="images/taro-app-prisma.png" alt="">
+                  </div>
+                  <div class="text-2xl my-8 taro--text--type__linotte-bold">
+                    PRISM
+                  </div>
+                  <div class="text-base taro--text--type__linotte-light md:text-xl">
+                    Tự trang điểm bằng nghệ thuật, dựa trên phong cách chủ đề bộ bài yêu thích
+                  </div>
+                </li>
+            </ul>
+        </div>
+        <div>
+          <img src="images/taro-bg-app-feature.png" alt="">
+        </div>
+    </section>
     <section class=""></section>
     <section class=""></section>
     <section class=""></section>
