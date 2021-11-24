@@ -1,3 +1,5 @@
 .taro-background {
-    background-image: url(../images/taro-bg-banner.png)
+    background-image: url(../images/taro-bg-banner.png);
+    background-size: cover;
+    background-position: center;
 }
