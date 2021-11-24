@@ -1,3 +1,25 @@
 .taro-background {
     background-image: url(../images/taro-bg-banner.png)
 }
+.secsion2-taro-wiki{
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    background-color: rgb(28, 63, 66);
+    color: rgb(249, 250, 251);
+    font-size: 20px;
+    font-family: "r0c0i Linotte Bold";
+}
+.ss2-text-header{
+    font-family: "r0c0i Linotte Light";
+    color: rgb(17, 65, 70);
+}
+.ss2-text-center{
+    font-family: "r0c0i Linotte Bold";
+    color: rgb(17, 65, 70);
+}
+.color-text-taro {
+    color: rgb(17, 65, 70);
+}
