@@ -124,4 +124,19 @@ function getDirection() {
     return direction;
 }
 
+// AOS animation
 AOS.init();
+
+// navbar
+$(document).ready(function() {
+    $(window).scroll(function(event) {
+        var heightBody = $(window).scrollTop();
+        if (heightBody >= 100) {
+            $('.taro-menu').removeClass('py-8');
+            $('.taro-menu').addClass('py-2 color_bg-navbar transition ease-in duration-700');
+        } else {
+            $('.taro-menu').addClass('py-8');
+            $('.taro-menu').removeClass('py-2 color_bg-navbar transition ease-in duration-700');
+        }
+    })
+})
