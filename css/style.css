@@ -34,6 +34,10 @@
     font-family: "r0c0i Linotte Bold";
 }
 
+.taro-daily-footer {
+    background-size: 100% 100%;
+}
+
 
 /* taro slide favorite */
 
@@ -44,26 +48,6 @@
 .swiper {
     width: 100%;
     height: 100%;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    width: 256px !important;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    /* margin: 0 27px; */
 }
 
 @media (max-width: 760px) {
@@ -99,4 +83,156 @@
 .swiper-button-next:after,
 .swiper-button-prev:after {
     font-size: unset;
+}
+
+
+/* section taro library */
+
+.taro-library_body {
+    background-image: url(../images/taro-bg-spread.png)
+}
+
+.slide_librarys-content .swiper-slide-active img {
+    width: 100% !important;
+}
+
+.taro-library_body {
+    height: max-content;
+}
+
+.slide_librarys-content .swiper-button-next:after,
+.slide_librarys-content .swiper-button-prev:after {
+    font-size: xx-large;
+}
+
+.slide_favorite-content-ssfive .swiper-button-next:after,
+.slide_favorite-content-ssfive .swiper-button-prev:after {
+    font-size: xx-large;
+}
+
+
+/* section5 */
+
+.slide {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide-ssfive {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 320px !important;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    /* margin: 0 27px; */
+}
+
+@media (max-width: 760px) {
+    .swiper-button-next {
+        right: 50px;
+        transform: rotate(90deg);
+        font-size: 50px!important;
+    }
+    .swiper-button-prev {
+        left: 50px;
+        transform: rotate(90deg);
+        font-size: 50px!important;
+    }
+}
+
+@media (min-width: 1536px) {
+    .slide_favorite-content-ssfive .container {
+        max-width: 1280px;
+    }
+    .slide_favorite-content-sssix.container {
+        max-width: 1280px;
+    }
+}
+
+.swiper-slide-ssfive img {
+    width: 70% !important;
+    margin: 0 auto;
+}
+
+.slide_favorite-content-ssfive .swiper-slide-active {
+    position: relative;
+    height: none;
+}
+
+.slide_favorite-content-ssfive .swiper-slide-active img {
+    width: 85% !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: unset;
+}
+
+.ssfive-big {
+    left: 18px;
+    height: 90%;
+}
+
+
+/* //section6 */
+
+.sssix-big {
+    left: 25px;
+    height: 110%;
+    bottom: 100px;
+}
+
+.swiper-slide-sssix {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 320px !important;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    /* margin: 0 27px; */
+}
+
+.swiper-slide-sssix img {
+    width: 70% !important;
+    margin: 0 auto;
+}
+
+.slide_favorite-content-sssix .swiper-slide-active {
+    position: relative;
+    height: none;
+}
+
+.slide_favorite-content-sssix .swiper-slide-active img {
+    width: 85% !important;
+}
+
+
+/* taro card */
+
+
+/* taro footer */
+
+.taro-footer {
+    background-image: url(../images/taro-bg-footer.png)
 }
