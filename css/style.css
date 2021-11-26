@@ -311,5 +311,31 @@
 /* taro footer */
 
 .taro-footer {
-    background-image: url(../images/taro-bg-footer.png)
+    background-image: url(../images/taro-bg-footer.png);
+    background-repeat-y: no-repeat;
+}
+
+@media (max-width: 400px) {
+    .taro-nav-right {
+        display: none;
+    }
+    .button-next,
+    .button-prev {
+        display: none;
+    }
+    .taro-banner-content {
+        padding: 10px;
+    }
+    .img-ss2-responsive {
+        padding: 0 50px;
+    }
+    .swiper-slide-ssfive {
+        width: 250px!important;
+    }
+    .taro-library_header-download {
+        display: none;
+    }
+    .swiper-slide-sssix {
+        width: 250px!important;
+    }
 }

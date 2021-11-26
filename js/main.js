@@ -10,15 +10,15 @@ let swiper = new Swiper('.swiper', {
     breakpoints: {
         // when window width is >= 320px
         320: {
-            slidesPerView: 2
+            slidesPerView: 3
         },
         // when window width is >= 480px
         480: {
-            slidesPerView: 3
+            slidesPerView: 5
         },
         // when window width is >= 640px
         640: {
-            slidesPerView: 4
+            slidesPerView: 5
         },
         760: {
             slidesPerView: 5
@@ -69,7 +69,7 @@ let slide = new Swiper('.slide', {
     breakpoints: {
         // when window width is >= 320px
         320: {
-            slidesPerView: 3
+            slidesPerView: 1
         },
         // when window width is >= 480px
         480: {
@@ -93,15 +93,10 @@ let slideSix = new Swiper('.slideSix', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    on: {
-        resize: function() {
-            slideSix.changeDirection('horizontal');
-        }
-    },
     breakpoints: {
         // when window width is >= 320px
         320: {
-            slidesPerView: 3
+            slidesPerView: 1
         },
         // when window width is >= 480px
         480: {
