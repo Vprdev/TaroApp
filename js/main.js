@@ -135,3 +135,10 @@ $(document).ready(function() {
         }
     })
 })
+
+
+// navbar mobile tablet
+$(".menu-mobile-tablet, .overlay-mobile-tablet").click(function() {
+    $('.header-menu_mobile-tablet').toggleClass('hidden');
+    $('.overlay-mobile-tablet').toggleClass('hidden');
+});

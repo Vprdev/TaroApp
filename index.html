@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taro</title>
-
+    <link rel="icon" href="/images/taro.ico" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
@@ -18,17 +18,42 @@
     <div class="taro-navbar w-full fixed h-auto navbar top-0 inset-x-0">
         <div class="taro-menu justify-between content-center py-8">
             <div class="container mx-auto flex flex-row ">
-                <div class="taro-logo w-1/3">
-                    <img src="/images/taro-logo.png" alt="Taro logo" class="w-36 ml-4 md:ml-0" />
+                <!-- menu mobile tablet-->
+                <div class="absolute md:hidden py-3 sm:ml-8 ml-4">
+                    <label class="menu-mobile-tablet cursor-pointer"><img src="/images/menu.png"></label>
+                    <label class="overlay-mobile-tablet hidden inset-0 fixed"></label>
+                    <nav class="header-menu_mobile-tablet hidden fixed inset-y-0 left-0 bg-black w-64">
+                        <ul class="block justify-end text-white items-center py-16 px-8">
+                            <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8 h-8 leading-8 mb-2">Trang chủ</li>
+                            <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8 h-8 leading-8 mb-2">Taro là gì?</li>
+                            <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8 h-8 leading-8 mb-2">Góp ý</li>
+                            <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8 h-8 leading-8 mb-2 mt-16 mb-4">
+                                <a href="" class="cursor-pointer rounded py-2 px-6 bg-gradient-to-r from-pink-400 via-pink-500 to-red-500">Taro <small class="text-sm">wiki</small></a>
+
+                            </li>
+                            <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8 mb-4">
+                                <a href="">
+                                    <img src="/images/taro-CHPlay.png" alt="CHPlay" class="w-28 cursor-pointer">
+                                </a>
+                            </li>
+                            <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8 mb-4">
+                                <a href="">
+                                    <img src="/images/taro-AppStore.png" alt="AppStore" class="w-28 cursor-pointer">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="taro-nav-right md:flex lg:flex w-2/3 text-sm md:text-base md:text-xl">
+                <div class="taro-logo lg:w-1/3 md:w-1/4 sm:w-full w-full">
+                    <img src="/images/taro-logo.png" alt="Taro logo" class="w-36 md:ml-0 sm:mx-auto mx-auto" />
+                </div>
+                <div class="taro-nav-right md:flex lg:flex lg:w-2/3 md:w-3/4 text-sm md:text-base md:text-xl sm:hidden hidden">
                     <ul class="flex justify-end text-white flex-row items-center">
                         <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8">Trang chủ</li>
                         <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8">Taro là gì?</li>
                         <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8">Góp ý</li>
                         <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8">
                             <a href="" class="cursor-pointer rounded py-2 px-6 bg-gradient-to-r from-pink-400 via-pink-500 to-red-500">Taro <small class="text-sm">wiki</small></a>
-
                         </li>
                         <li class="whitespace-nowrap ml-4 lg:ml-6 xl:ml-8">
                             <a href="">
@@ -42,26 +67,29 @@
                         </li>
                     </ul>
                 </div>
+
             </div>
         </div>
     </div>
     <section class="taro-banner">
-        <div data-aos="zoom-out" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0" class="taro-background relative bg-contain h-screen overflow-hidden"></div>
-        <div data-aos="zoom-in-up" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0" class="taro-banner-content absolute top-1/4 md:w-2/3 justify-center mx-auto inset-x-0 text-white z-50">
-            <div class="banner-title flex justify-center content-center text-base items-center md:text-4xl whitespace-nowrap font_LinotteBold ">
-                TÌM THẤY
-                <h1 class="md:text-6xl md:mx-8 text-2xl"> ÁNH SÁNG </h1> TÂM HỒN
-            </div>
-            <div class="font_LinotteLight banner-content mx-auto text-center justify-center w-full content-center items-center flex-row md:text-2xl mt-8">
-                <p>Nếu như mỗi chúng ta đều là những thực thể tâm linh được tạo ra từ ánh sáng tràn đầy yêu thương của Nguồn, của Vũ Trụ, vậy ánh sáng của bạn sẽ là màu gì nhỉ? Trên hành trình thắp lên ánh sáng của bản thân, soi sáng đường bạn đi, hãy để
-                    những ánh quang khác cùng cộng hưởng với bạn. Hãy để TARO có thể đi cùng bạn. Và cùng nhau, chúng ta tìm về với chân ngã của chúng mình.
-                </p>
-            </div>
-            <div class="banner-logo_download flex justify-center mt-8">
-                <img class="w-40" src="/images/taro-CHPlay.png" alt="CHPlay">
-                <img class="w-40 ml-4" src="/images/taro-AppStore.png" alt="AppStore">
+        <div data-aos="zoom-out" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0" class="taro-background relative bg-contain h-screen overflow-hidden">
+            <div data-aos="zoom-in-up" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0" class="taro-banner-content absolute top-1/4 md:w-2/3 justify-center mx-auto inset-x-0 text-white z-50">
+                <div class="banner-title flex justify-center content-center text-base items-center md:text-4xl whitespace-nowrap font_LinotteBold ">
+                    TÌM THẤY
+                    <h1 class="md:text-6xl md:mx-8 text-2xl"> ÁNH SÁNG </h1> TÂM HỒN
+                </div>
+                <div class="font_LinotteLight banner-content mx-auto text-center justify-center w-full content-center items-center flex-row md:text-2xl mt-8 sm:px-8 px-2">
+                    <p>Nếu như mỗi chúng ta đều là những thực thể tâm linh được tạo ra từ ánh sáng tràn đầy yêu thương của Nguồn, của Vũ Trụ, vậy ánh sáng của bạn sẽ là màu gì nhỉ? Trên hành trình thắp lên ánh sáng của bản thân, soi sáng đường bạn đi, hãy
+                        để những ánh quang khác cùng cộng hưởng với bạn. Hãy để TARO có thể đi cùng bạn. Và cùng nhau, chúng ta tìm về với chân ngã của chúng mình.
+                    </p>
+                </div>
+                <div class="banner-logo_download flex justify-center mt-8">
+                    <img class="w-40" src="/images/taro-CHPlay.png" alt="CHPlay">
+                    <img class="w-40 ml-4" src="/images/taro-AppStore.png" alt="AppStore">
+                </div>
             </div>
         </div>
+
     </section>
     <section>
         <div class="xl:container flex justify-center xl:mx-auto md:container md:mx-auto mt-16">
@@ -300,7 +328,7 @@
         </div>
     </section>
     <section class="taro-library mt-32 relative">
-        <div class="taro-library_header container flex flex-col md:flex-row mx-auto mb-8">
+        <div class="taro-library_header container flex flex-col md:flex-row mx-auto mb-8 sm:items-center items-center">
             <div data-aos="flip-left" class="taro-library_header-download flex justify-end w-1/3 md:mt-32 md:items-end mb-32">
                 <a href="">
                     <img loading="lazy" class="w-40 cursor-pointer" src="/images/taro-AppStore-dark.png" alt="AppStore">
@@ -314,7 +342,7 @@
                     <button class="text-2xl lg:text-5xl rounded-full shadow-2xl p-4 px-16 font_LinotteBold">Thư viện cách trả bài</button>
                 </div>
                 <div class="taro-library_body-content">
-                    <p class="text-base text-center md:text-2xl md:px-0 md:text-right px-4 mt-16 font_LinotteSemiBold color_text-green">Bạn có thể lập một phiên trải bài hoàn hảo ngay trên chiếc điện thoại ở mọi lúc, với lựa chọn rút bài ngẫu nhiên ngay trên ứng dụng TARO, hoặc chọn lá bài để bỏ vào vị trí phù hợp. Và rồi, một phiên trải bài tarot chuyên nghiệp, dễ
+                    <p class="text-base text-center md:text-2xl md:px-0 md:text-right md:px-4 px-4 mt-16 font_LinotteSemiBold color_text-green">Bạn có thể lập một phiên trải bài hoàn hảo ngay trên chiếc điện thoại ở mọi lúc, với lựa chọn rút bài ngẫu nhiên ngay trên ứng dụng TARO, hoặc chọn lá bài để bỏ vào vị trí phù hợp. Và rồi, một phiên trải bài tarot chuyên nghiệp, dễ
                         tiếp cận được tạo ra, bởi chính bạn.</p>
                 </div>
             </div>
@@ -418,17 +446,18 @@
                     <button data-aos="fade-up" data-aos-duration="500" class="text-2xl font-semibold lg:text-5xl rounded-full color-text-taro shadow-2xl p-4 px-16 font-family-linotte-bold">
                   Bạn có câu chuyện để kể
                   </button>
-                    <p data-aos="fade-up" data-aos-duration="500" class="font-semibold color-text-taro text-base md:text-2xl mt-16 mb-8 text-center md:text-right w-full">
+                    <p data-aos="fade-up" data-aos-duration="500" class="font-semibold color-text-taro text-base md:text-2xl mt-16 mb-8 text-center md:text-center w-full">
                         Khác với những ứng dụng tarot khác, <b class="font-family-linotte-bold">TARO</b> thật sự là một người bạn. <br> Và còn là có một cuốn journal để có thể viết và lưu lại hành trình tuyệt vời của mình đấy nhé!
                     </p>
-                    <div class="mt-8 text-center flex justify-center w-full md:w-7/12 items-center md:items-end justify-center md:justify-end">
-                        <div data-aos="fade-up" data-aos-duration="500" class="">
-                            <img loading="lazy" src="images/taro-CHPlay-dark.png" alt="Download Taro App in CH Play" class="w-40 cursor-pointer">
-                        </div>
-                        <div data-aos="fade-up" data-aos-duration="500" class="ml-4">
-                            <img loading="lazy" src="images/taro-AppStore-dark.png" alt="Download Taro App in Appstore" class="w-40 cursor-pointer">
-                        </div>
-                    </div>
+
+                </div>
+            </div>
+            <div class="mt-8 text-center flex justify-center w-full items-center  md:items-end justify-center">
+                <div data-aos="fade-up" data-aos-duration="500" class="">
+                    <img loading="lazy" src="images/taro-CHPlay-dark.png" alt="Download Taro App in CH Play" class="w-40 cursor-pointer">
+                </div>
+                <div data-aos="fade-up" data-aos-duration="500" class="ml-4">
+                    <img loading="lazy" src="images/taro-AppStore-dark.png" alt="Download Taro App in Appstore" class="w-40 cursor-pointer">
                 </div>
             </div>
         </div>
@@ -444,7 +473,7 @@
         </div>
         <div class="taro-card_body mt-32">
             <div class="container block sm:block md:flex font_LinotteLight color_text-green">
-                <div data-aos="fade-up" class="taro-card_body-element md:rounded-2xl md:px-0 md:mx-1 lg:m-8 lg:px-6 lg:py-2 md:flex md:h-full md:flex-col text-center border border-solid border-transparent shadow-2xl w-1/3 sm:w-full sm:mx-12 sm:px-12 w-full mx-0 px-12">
+                <div data-aos="fade-up" class="taro-card_body-element md:rounded-2xl md:px-0 md:mx-1 lg:m-8 lg:px-6 lg:py-2 md:flex md:h-full md:flex-col text-center border border-solid border-transparent shadow-2xl w-1/3 sm:w-11/12 sm:mx-auto sm:px-0 w-11/12 mx-auto px-12">
                     <div class="taro-card_body-element-img md:-mt-12 md:mb-12 relative lg:-top-1/3 border border-solid rounded-full border-transparent overflow-hidden w-28 h-28 mx-auto sm:-mt-12 sm:mb-20 -mt-12 mb-20">
                         <img class="h-full w-full items-center object-cover" src="https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg" alt="">
                     </div>
@@ -453,7 +482,7 @@
                         </p>
                     </div>
                 </div>
-                <div data-aos="fade-up" class="taro-card_body-element md:rounded-2xl md:px-0 md:mx-1 lg:m-8 lg:px-6 lg:py-2 md:flex md:h-full md:flex-col text-center border border-solid border-transparent shadow-2xl w-1/3 sm:w-full sm:mx-12 sm:px-12 w-full mx-0 px-12 sm:my-24 my-24">
+                <div data-aos="fade-up" class="taro-card_body-element md:rounded-2xl md:px-0 md:mx-1 lg:m-8 lg:px-6 lg:py-2 md:flex md:h-full md:flex-col text-center border border-solid border-transparent shadow-2xl w-1/3 sm:w-11/12 sm:mx-auto sm:px-0 w-11/12 mx-auto px-12 sm:my-24 my-24">
                     <div class="taro-card_body-element-img md:-mt-12 md:mb-12 relative lg:-top-1/3 border border-solid rounded-full border-transparent overflow-hidden w-28 h-28 mx-auto sm:-mt-12 sm:mb-20 -mt-12 mb-20">
                         <img class="h-full w-full items-center object-cover" src="https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg" alt="">
                     </div>
@@ -462,7 +491,7 @@
                         </p>
                     </div>
                 </div>
-                <div data-aos="fade-up" class="taro-card_body-element md:rounded-2xl md:px-0 md:mx-1 lg:m-8 lg:px-6 lg:py-2 md:flex md:h-full md:flex-col text-center border border-solid border-transparent shadow-2xl w-1/3 sm:w-full sm:mx-12 sm:px-12 w-full mx-0 px-12">
+                <div data-aos="fade-up" class="taro-card_body-element md:rounded-2xl md:px-0 md:mx-1 lg:m-8 lg:px-6 lg:py-2 md:flex md:h-full md:flex-col text-center border border-solid border-transparent shadow-2xl w-1/3 sm:w-11/12 sm:mx-auto sm:px-0 w-11/12 mx-auto px-12">
                     <div class="taro-card_body-element-img md:-mt-12 md:mb-12 relative lg:-top-1/3 border border-solid rounded-full border-transparent overflow-hidden w-28 h-28 mx-auto sm:-mt-12 sm:mb-20 -mt-12 mb-20">
                         <img class="h-full w-full items-center object-cover" src="https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg" alt="">
                     </div>
@@ -493,20 +522,20 @@
                 <div class="footer-infor_logo">
                     <img class="mx-auto w-1/2" src="/images/taro-logo.png" alt="Taro">
                 </div>
-                <div class="footer-infor_social mt-12 md:mt-10">
+                <div class="footer-infor_social mt-12 md:mt-20">
                     <ul class="block md:flex flex-nowrap justify-evenly sm:block">
                         <li class="whitespace-nowrap">
                             <a class="sm:justify-center flex mr-12 text-white leading-8 h-8" href="">
                                 <img class="mr-4 ml-24 md:mr-1 md:ml-0 lg:mr-8 lg:ml-12" src="/images/taro-ic-earth.png" alt=""> www.taroapp.net
                             </a>
                         </li>
-                        <li class="whitespace-nowrap md:border-solid md:border-white  md:border-l md:border-r lg:border-solid lg:border-white sm:border-none my-4 sm:my-8 md:my-0">
+                        <li class="whitespace-nowrap md:border-none lg:border-l lg:border-r lg:border-solid lg:border-white sm:border-none my-4 sm:my-8 md:my-0">
                             <a class="sm:justify-center flex mr-12 text-white leading-8 h-8" href="">
                                 <img class="mr-4 ml-24 md:mr-1 md:ml-0 lg:mr-8 lg:ml-12" src="/images/taro-ic-fb.png" alt=""> Taro Station
                             </a>
                         </li>
                         <li class="whitespace-nowrap">
-                            <a class="sm:justify-center flex mr-12 text-white leading-8 h-8" href="">
+                            <a class="sm:justify-center flex mr-6 text-white leading-8 h-8" href="">
                                 <img class="mr-4 ml-24 md:mr-1 md:ml-0 lg:mr-8 lg:ml-12" src="/images/taro-ic-ins.png" alt=""> @taro.station
                             </a>
                         </li>
